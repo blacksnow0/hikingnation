@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  @keyframes slide-fade {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slide-fade {
+    animation: slide-fade 0.3s ease-in-out forwards;
+  }
+}
+
+@layer utilities {
+  .bg-brand {
+    background-color: #025202;
+  }
+
+  .hover\:bg-brand-hover:hover {
+    background-color: #3bb03b;
+  }
+
+  .text-brand {
+    color: #1b5e20;
+  }
+
+  .border-brand {
+    border-color: #228b22;
+  }
+
+  .ring-brand {
+    --tw-ring-color: #228b22;
+  }
+}
