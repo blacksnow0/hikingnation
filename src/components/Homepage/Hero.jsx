@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import hero2 from "../../assets/images/hero2.jpg";
 
 function Hero() {
@@ -60,9 +61,11 @@ function Hero() {
 
         {/* Read More CTA */}
         <div className="text-right">
-          <button className="text-sm  font-semibold text-brand hover:underline hover:text-[#159e70] transition-all duration-200">
-            Read More →
-          </button>
+          <Link to="/about">
+            <button className="text-sm  font-semibold text-brand hover:underline hover:text-[#159e70] transition-all duration-200">
+              Read More →
+            </button>
+          </Link>
         </div>
       </div>
     </section>

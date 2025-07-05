@@ -10,9 +10,11 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-white backdrop-blur shadow-md px-4 py-5">
       <div className="flex items-center justify-between max-w-6xl mx-auto">
-        <h1 className="text-xl font-bold text-[#1f2937] tracking-wide">
-          Hiking Nation
-        </h1>
+        <Link to="/" className="hover:text-[#1b5e20]">
+          <h1 className="text-xl font-bold text-[#1f2937] tracking-wide">
+            Hiking Nation
+          </h1>
+        </Link>
 
         <div className="hidden md:flex space-x-6 text-sm font-semibold tracking-wide">
           <Link to="/" className="hover:text-[#1b5e20]">
