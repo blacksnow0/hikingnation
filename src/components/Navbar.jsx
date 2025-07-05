@@ -8,7 +8,7 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-white backdrop-blur shadow-md px-4 py-5">
+    <nav className="fixed top-0 w-full z-50 bg-white/60 backdrop-blur shadow-md px-4 py-4">
       <div className="flex items-center justify-between max-w-6xl mx-auto">
         <Link to="/" className="hover:text-[#1b5e20]">
           <h1 className="text-xl font-bold text-[#1f2937] tracking-wide">
