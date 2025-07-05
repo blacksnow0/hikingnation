@@ -9,13 +9,13 @@ export default function DestinationCard({
 }) {
   return (
     <Link to={`destinations/${id}`} className="block">
-      <div className="w-full max-w-md mx-auto  rounded-2xl overflow-hidden shadow-lg border border-[#2a2a2a]">
+      <div className="w-[90%] max-w-md mx-auto rounded-2xl overflow-hidden shadow-lg border border-[#2a2a2a]">
         {/* Image Block */}
         <div className="relative">
           <img
             src={image}
             alt={name}
-            className="w-full h-60 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+            className="w-full h-60  sm:h-64 object-cover group-hover:scale-105 transition-transform duration-500"
           />
 
           {/* Overlay Gradient */}

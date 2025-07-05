@@ -53,9 +53,7 @@ function DestinationDetail() {
         <p className="text-base text-neutral-700">{description}</p>
 
         <div className="text-sm text-neutral-500">
-          <span className="font-semibold text-neutral-800">
-            Best Time to Visit:
-          </span>{" "}
+          <span className="font-semibold text-brand">Best Time to Visit:</span>{" "}
           {bestTimeToVisit}
         </div>
       </div>
@@ -69,10 +67,43 @@ function DestinationDetail() {
           {attractions.map((spot, idx) => (
             <span
               key={idx}
-              className="px-3 py-1 bg-brand/10 text-brand rounded-full text-xs"
+              className="px-3 py-1 bg-[#228b22]/10 text-brand rounded-full text-xs"
             >
               {spot}
             </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Itinerary */}
+      <div className="mt-10">
+        <h2 className="text-lg font-semibold text-brand mb-4">Itinerary</h2>
+        <div className="space-y-4">
+          {itinerary.map((day, idx) => (
+            <div
+              key={idx}
+              className="border-l-4 border-brand pl-4 py-3 bg-neutral-50 rounded-md shadow-sm"
+            >
+              <h4 className="font-bold text-neutral-800">
+                {day.day}: {day.highlight}
+              </h4>
+              <p className="text-sm text-neutral-600 mt-1">{day.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Gallery */}
+      <div className="mt-10">
+        <h2 className="text-lg font-semibold text-brand mb-4">Gallery</h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          {gallery.map((img, i) => (
+            <img
+              key={i}
+              src={img}
+              alt={`Gallery ${i + 1}`}
+              className="rounded-lg object-cover w-full h-32 sm:h-40 border border-neutral-200"
+            />
           ))}
         </div>
       </div>
@@ -108,39 +139,6 @@ function DestinationDetail() {
               <li key={i}>{item}</li>
             ))}
           </ul>
-        </div>
-      </div>
-
-      {/* Itinerary */}
-      <div className="mt-10">
-        <h2 className="text-lg font-semibold text-brand mb-4">Itinerary</h2>
-        <div className="space-y-4">
-          {itinerary.map((day, idx) => (
-            <div
-              key={idx}
-              className="border-l-4 border-brand pl-4 py-3 bg-neutral-50 rounded-md shadow-sm"
-            >
-              <h4 className="font-bold text-neutral-800">
-                {day.day}: {day.highlight}
-              </h4>
-              <p className="text-sm text-neutral-600 mt-1">{day.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Gallery */}
-      <div className="mt-10">
-        <h2 className="text-lg font-semibold text-brand mb-4">Gallery</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-          {gallery.map((img, i) => (
-            <img
-              key={i}
-              src={img}
-              alt={`Gallery ${i + 1}`}
-              className="rounded-lg object-cover w-full h-32 sm:h-40 border border-neutral-200"
-            />
-          ))}
         </div>
       </div>
     </section>
