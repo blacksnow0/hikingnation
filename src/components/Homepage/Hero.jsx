@@ -17,10 +17,6 @@ function Hero() {
           Discover breathtaking destinations, connect with fellow hikers, and
           plan your next adventure into the wild.
         </p>
-
-        {/* <button className="mt-4 bg-white text-brand hover:bg-[#e6f4e6] font-semibold px-6 py-3 rounded-lg shadow transition duration-300">
-          Explore Destinations
-        </button> */}
       </div>
 
       {/* Enhanced Image Section */}

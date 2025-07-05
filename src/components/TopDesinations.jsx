@@ -1,4 +1,4 @@
-import DestinationCard from "./DestinationCard";
+import DestinationCard from "./DestinationCard.jsx";
 import { topDestinations } from "../utils/data.js";
 
 function TopPicks() {

@@ -1,5 +1,5 @@
 import Hero from "../components/Homepage/Hero";
-import TopPicks from "./TopDesinations";
+import TopPicks from "../components/TopDesinations";
 
 export default function Home() {
   return (
