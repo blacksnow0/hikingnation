@@ -25,7 +25,7 @@ function Hero() {
 
       {/* Enhanced Image Section */}
       <div className="mt-12 w-full max-w-sm z-10">
-        <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl border-2 border-[#1aac83]/30 hover:border-[#1aac83] transition duration-300">
+        <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl border-2 ">
           <img
             src={hero2}
             alt="Hiking Trail"
