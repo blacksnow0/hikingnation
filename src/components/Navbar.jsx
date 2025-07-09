@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
+import logo from "../assets/logo.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,16 +9,18 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-white/60 backdrop-blur shadow-md px-4 py-4">
+    <nav className="fixed top-0 w-full z-50 bg-white/20 backdrop-blur shadow-md px-4 py-4">
       <div className="flex items-center justify-between max-w-6xl mx-auto">
-        <Link to="/" className="hover:text-[#1b5e20]">
-          <h1 className="text-xl font-bold text-[#1f2937] tracking-wide">
-            Hiking Nation
-          </h1>
+        <Link to="/" className="flex items-center gap-2 hover:text-[#1b5e20]">
+          <img
+            src={logo}
+            alt="Hiking Nation Logo"
+            className="w-20 h-10 object-contain"
+          />
         </Link>
 
         <div className="hidden md:flex space-x-6 text-sm font-semibold tracking-wide">
-          <Link to="/" className="hover:text-[#1b5e20]">
+          <Link to="/" className=" hover:text-[#1b5e20]">
             Home
           </Link>
           <Link to="/destinations" className="hover:text-[#1b5e20]">
