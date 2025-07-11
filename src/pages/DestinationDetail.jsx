@@ -121,6 +121,20 @@ function DestinationDetail() {
           </ul>
         </div>
 
+        {/* Preparation (Optional) */}
+        {destination.preparation && destination.preparation.length > 0 && (
+          <div className="mt-10">
+            <h2 className="text-lg font-semibold text-brand mb-2">
+              Preparation Tips
+            </h2>
+            <ul className="list-disc list-inside text-sm text-neutral-700 space-y-1">
+              {destination.preparation.map((tip, i) => (
+                <li key={i}>{tip}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         <div>
           <h3 className="text-base font-semibold text-brand mb-2">
             Inclusions

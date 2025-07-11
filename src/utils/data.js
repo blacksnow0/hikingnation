@@ -16,6 +16,99 @@ import gallery7 from "../assets/images/valley/valley.jpeg";
 
 export const destinations = [
   {
+    id: "kagbhusandi-tal",
+    name: "Kagbhusandi Tal Trek",
+    country: "India",
+    description:
+      "A hidden gem in the Garhwal Himalayas, Kagbhusandi Tal is a sacred high-altitude lake trek ideal for seasoned trekkers seeking solitude, alpine beauty, and cultural connection. This 60 km journey winds through wild valleys, local villages, and pristine Himalayan backdrops.",
+    imageUrl: kagbhusandiImage, // Replace with actual image import
+    bestTimeToVisit: "June - October",
+    attractions: [
+      "Kagbhusandi Tal",
+      "Hathi and Ghori Peaks",
+      "Bhyundar Village",
+      "Semer Toli Kharak",
+      "Rare Himalayan Wildlife",
+    ],
+    galleryImages: [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6], // Update accordingly
+    itinerary: [
+      {
+        day: "Day 1",
+        highlight: "Pulna to Bhyundar Village (2,500m)",
+        description:
+          "Start your journey from Pulna and trek to the peaceful Bhyundar Village, settling in and adjusting to the higher altitude.",
+      },
+      {
+        day: "Day 2",
+        highlight: "Bhyundar Village to Semer Toli Kharak (3,300m)",
+        description:
+          "Begin ascending through scenic alpine landscapes and forest trails to reach Semer Toli Kharak — a perfect campsite surrounded by nature.",
+      },
+      {
+        day: "Day 3",
+        highlight: "Semer Toli Kharak to Raj Kharkh (4,000m)",
+        description:
+          "Trek further into the high Himalayas, moving above the tree line into meadows with sweeping views of the peaks.",
+      },
+      {
+        day: "Day 4",
+        highlight: "Raj Kharkh to Kagbhusandi Tal (5,200m)",
+        description:
+          "The final ascent to Kagbhusandi Tal — a glacial lake nestled among towering cliffs. Spend time exploring its sacred surroundings before resting nearby.",
+      },
+      {
+        day: "Day 5",
+        highlight: "Return to Semer Toli Kharak",
+        description:
+          "Retrace your route back to Semer Toli Kharak for an easier descent and well-earned rest.",
+      },
+      {
+        day: "Day 6",
+        highlight: "Semer Toli Kharak to Bhyundar Village",
+        description:
+          "Descend through the lush valleys and forested trails toward the warmth of village life.",
+      },
+      {
+        day: "Day 7",
+        highlight: "Bhyundar Village to Pulna",
+        description:
+          "End your trek as you hike back to Pulna, concluding your Himalayan journey with unforgettable memories.",
+      },
+    ],
+    highlights: [
+      "High-altitude glacial lake (5,200m)",
+      "Stunning views of Hathi and Ghori peaks",
+      "Wildlife sightings: Himalayan Monal, Snow Leopard, Blue Sheep",
+      "Immersive cultural experiences in Himalayan villages",
+    ],
+    inclusions: [
+      "Camping accommodation",
+      "All meals during the trek",
+      "Experienced local guides",
+      "Trekking permits from Uttarakhand authorities",
+      "First aid support",
+    ],
+    exclusions: [
+      "Transport to/from Pulna village",
+      "Personal camping gear (optional rental)",
+      "Backpack offloading charges",
+      "Insurance and emergency evacuation",
+      "Tips for guides and porters",
+    ],
+    preparation: [
+      "Ensure good physical fitness before the trek",
+      "Carry adequate trekking and camping gear",
+      "Check weather and trail conditions beforehand",
+      "Respect local customs and environmental guidelines",
+    ],
+    price: "Custom - contact for details",
+    distance: "60 km approx.",
+    duration: "6-7 days",
+    altitude: "5,200 meters",
+    difficulty: "Challenging",
+    gallery: [gallery1, gallery2, gallery3, gallery5, gallery7], // Optional simplified gallery
+  },
+  {
     id: "valley-of-flowers",
     name: "Valley of Flowers Trek",
     country: "India",
@@ -88,74 +181,7 @@ export const destinations = [
     ],
     gallery: [valleyStart, gallery3, gallery5, gallery4, gallery1, gallery6],
   },
-  {
-    id: "kagbhusandi-trek",
-    name: "Kagbhusandi Trek",
-    country: "India",
-    description:
-      "Nestled in the Garhwal Himalayas, Kagbhusandi Trek offers breathtaking views, alpine meadows, and a spiritual escape into nature. It's a lesser-known gem ideal for experienced trekkers seeking solitude and serenity.",
-    imageUrl: kagbhusandiImage,
-    bestTimeToVisit: "June - October",
-    attractions: [
-      "Kagbhusandi Lake",
-      "Valley of Flowers",
-      "Hemkund Sahib",
-      "Joshimath",
-    ],
-    galleryImages: [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6],
-    itinerary: [
-      {
-        day: "Day 1",
-        highlight: "Arrival & Acclimatization in Joshimath",
-        description:
-          "Arrive in Joshimath, explore local temples like Narasimha Temple, and acclimate to the altitude with a peaceful evening briefing.",
-      },
-      {
-        day: "Day 2",
-        highlight: "Scenic Trek to Ghangaria",
-        description:
-          "Trek through forests and waterfalls along the Pushpawati River to reach the peaceful alpine village of Ghangaria.",
-      },
-      {
-        day: "Day 3",
-        highlight: "Spiritual Hike to Kagbhusandi Lake",
-        description:
-          "Trek to the sacred and serene Kagbhusandi Lake, known for its emerald water and mystical legends.",
-      },
-      {
-        day: "Day 4",
-        highlight: "Discover the Valley of Flowers",
-        description:
-          "Explore the UNESCO site filled with rare Himalayan flora and dreamy landscapes — nature’s true masterpiece.",
-      },
-      {
-        day: "Day 5",
-        highlight: "Descent & Departure from Joshimath",
-        description:
-          "Descend back to Govindghat and drive to Joshimath for final goodbyes and heartfelt reflections.",
-      },
-    ],
-    highlights: [
-      "6-day guided trek",
-      "Camp under the stars",
-      "All meals included",
-      "Local guide and porter",
-    ],
-    inclusions: [
-      "Accommodation in tents/lodges",
-      "All meals during the trek",
-      "Certified local guide",
-      "First aid kit",
-      "Entry and forest permits",
-    ],
-    exclusions: [
-      "Transportation to base location",
-      "Personal trekking gear",
-      "Insurance",
-      "Snacks & beverages",
-    ],
-    gallery: [gallery1, gallery2, gallery3, gallery4, valleyStart, gallery7],
-  },
+
   {
     id: "kuari-pass",
     name: "Kuari Pass Trek",
@@ -244,11 +270,12 @@ export const topDestinations = [
     price: "8,000",
   },
   {
-    id: "kagbhusandi-trek",
+    id: "kagbhusandi-tal",
     name: "Kagbhusandi Trek",
     image: kagbhusandiImage,
-    description: "A tropical paradise with beautiful beaches and rich culture.",
-    price: "12,000",
+    description:
+      "A hidden gem in the Garhwal Himalayas, Kagbhusandi Tal is a sacred high-altitude lake trek ideal for seasoned trekkers seeking solitude.",
+    price: "20,000",
   },
   {
     id: "kuari-pass",
