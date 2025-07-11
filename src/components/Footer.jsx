@@ -29,7 +29,7 @@ export default function Footer() {
         {/* Social Icons */}
         <div className="flex gap-4 text-white/70 text-sm">
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/hikingnation2025/profilecard/?igsh=MWU1amV6bHV0ejQ1eA%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-brand"

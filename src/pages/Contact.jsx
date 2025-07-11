@@ -87,6 +87,34 @@ export default function Contact() {
           </p>
         )}
       </form>
+      {/* Call Info Section */}
+      <div className="bg-[#f6faf8] mt-10 border border-brand/20 rounded-xl p-5 mb-10 shadow-sm">
+        <h2 className="text-lg font-semibold text-brand mb-2">
+          Call Us Directly
+        </h2>
+        <p className="text-sm text-neutral-600 mb-1">
+          📞{" "}
+          <a
+            href="tel:+917017502703"
+            className="text-brand font-medium hover:underline"
+          >
+            +91 7536861503
+          </a>
+        </p>
+        <p className="text-sm text-neutral-600">
+          📞{" "}
+          <a
+            href="tel:+919999999999"
+            className="text-brand font-medium hover:underline"
+          >
+            +91 7409335016
+          </a>{" "}
+          {/* Add any second number if needed */}
+        </p>
+        <p className="text-xs text-gray-500 mt-2 italic">
+          Available daily from 9AM – 8PM IST
+        </p>
+      </div>
     </section>
   );
 }
