@@ -10,10 +10,10 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        "your_service_id", // replace with your EmailJS Service ID
-        "your_template_id", // replace with your EmailJS Template ID
+        "service_f8a538j", //
+        "template_a6ntxh7",
         form.current,
-        "your_public_key" // replace with your EmailJS Public Key
+        "QMgpP9kG4CdOYD00I"
       )
       .then(
         (result) => {
@@ -87,7 +87,7 @@ export default function Contact() {
           </p>
         )}
       </form>
-      {/* Call Info Section */}
+
       <div className="bg-[#f6faf8] mt-10 border border-brand/20 rounded-xl p-5 mb-10 shadow-sm">
         <h2 className="text-lg font-semibold text-brand mb-2">
           Call Us Directly
@@ -95,7 +95,7 @@ export default function Contact() {
         <p className="text-sm text-neutral-600 mb-1">
           📞{" "}
           <a
-            href="tel:+917017502703"
+            href="tel:+917536861503"
             className="text-brand font-medium hover:underline"
           >
             +91 7536861503
@@ -104,7 +104,7 @@ export default function Contact() {
         <p className="text-sm text-neutral-600">
           📞{" "}
           <a
-            href="tel:+919999999999"
+            href="tel:+917409335016"
             className="text-brand font-medium hover:underline"
           >
             +91 7409335016

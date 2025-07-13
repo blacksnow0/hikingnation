@@ -3,6 +3,15 @@ import { useParams, Link } from "react-router-dom";
 import { destinations } from "../utils/data";
 
 function DestinationDetail() {
+  const handleBookNow = (trekName) => {
+    const message = `Hey! I’m interested in booking the "${trekName}" trek. Can you help me out? ⛰️`;
+    const phoneNumber = "7536861503";
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(url, "_blank");
+  };
+
   const { id } = useParams();
   const destination = destinations.find((dest) => dest.id === id);
 
@@ -93,6 +102,15 @@ function DestinationDetail() {
         </div>
       </div>
 
+      <div className="sm:col-span-2 mt-6">
+        <button
+          onClick={() => handleBookNow(name)}
+          className="w-full cursor-pointer sm:w-auto bg-green-900/80 hover:bg-[#1a6d1a] text-white px-6 py-3 text-sm sm:text-base font-semibold rounded-md shadow-md transition-all duration-300 ease-in-out"
+        >
+          📩 Book Now
+        </button>
+      </div>
+
       {/* Gallery */}
       <div className="mt-10">
         <h2 className="text-lg font-semibold text-brand mb-4">Gallery</h2>
@@ -123,7 +141,7 @@ function DestinationDetail() {
 
         {/* Preparation (Optional) */}
         {destination.preparation && destination.preparation.length > 0 && (
-          <div className="mt-10">
+          <div>
             <h2 className="text-lg font-semibold text-brand mb-2">
               Preparation Tips
             </h2>

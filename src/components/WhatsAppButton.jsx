@@ -1,8 +1,6 @@
-import React from "react";
-
 function WhatsAppButton() {
   const message = "Hey! I’d love to know more about the treks 🌿";
-  const phoneNumber = "7017502703";
+  const phoneNumber = "7536861503";
 
   return (
     <a
