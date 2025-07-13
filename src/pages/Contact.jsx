@@ -1,34 +1,35 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 export default function Contact() {
   const form = useRef();
   const [submitted, setSubmitted] = useState(false);
 
+  const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_f8a538j", //
-        "template_a6ntxh7",
-        form.current,
-        "QMgpP9kG4CdOYD00I"
-      )
-      .then(
-        (result) => {
-          setSubmitted(true);
-          form.current.reset();
-        },
-        (error) => {
-          console.error("FAILED...", error.text);
-        }
-      );
+    emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
+      (result) => {
+        setSubmitted(true);
+        form.current.reset();
+        toast.success("Message sent successfully!");
+        console.log(result.text);
+      },
+      (error) => {
+        console.error("FAILED...", error.text);
+        toast.error("⚠️ Something went wrong. Please try again.");
+      }
+    );
   };
 
   return (
     <section className="max-w-2xl mt-10 mx-auto px-6 py-16 text-neutral-800">
-      <h1 className="text-3xl font-bold text-brand mb-6 text-center">
+      <h1 className="text-3xl font-bold text-brand  mb-6 text-center">
         Contact Us
       </h1>
 
@@ -82,7 +83,7 @@ export default function Contact() {
         </button>
 
         {submitted && (
-          <p className="text-green-600 text-sm mt-3">
+          <p className="text-brand font-semibold text-sm mt-3">
             Thank you! Your message has been sent.
           </p>
         )}
