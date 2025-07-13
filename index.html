@@ -5,7 +5,21 @@
     <link rel="icon" href="/logo.jpeg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- ✅ Change These -->
+    <!-- ✅ Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-598LDGPK5D"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-598LDGPK5D");
+    </script>
+
+    <!-- ✅ SEO Essentials -->
     <title>Hiking Nation | Explore Treks in Uttarakhand</title>
     <meta
       name="description"
@@ -17,7 +31,7 @@
       content="trekking, hiking, Uttarakhand, Valley of Flowers, Kuari Pass, Satopanth, adventure travel, hikingnation"
     />
 
-    <!-- Open Graph for better social sharing -->
+    <!-- ✅ Open Graph for Social Sharing -->
     <meta property="og:title" content="Hiking Nation | Treks in Uttarakhand" />
     <meta
       property="og:description"
@@ -27,6 +41,7 @@
     <meta property="og:url" content="https://hikingnation.in" />
     <meta name="twitter:card" content="summary_large_image" />
 
+    <!-- ✅ Styles (Handled by Vite/React in prod, but okay to leave here) -->
     <link rel="stylesheet" href="/src/index.css" />
   </head>
   <body>

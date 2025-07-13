@@ -5,8 +5,10 @@ import ScrollToTop from "./components/ScrollToTop";
 import WhatsAppButton from "./components/WhatsAppButton";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import usePageTracking from "./hooks/usePageTracking";
 
 function Layout() {
+  usePageTracking();
   return (
     <>
       <Navbar />
