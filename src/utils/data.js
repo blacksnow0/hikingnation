@@ -275,7 +275,7 @@ export const topDestinations = [
     image: kagbhusandiImage,
     description:
       "A hidden gem in the Garhwal Himalayas, Kagbhusandi Tal is a sacred high-altitude lake trek ideal for seasoned trekkers seeking solitude.",
-    price: "20,000",
+    price: "25,000",
   },
   {
     id: "kuari-pass",
