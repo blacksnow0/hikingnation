@@ -1,6 +1,6 @@
 import kuariImage from "../assets/images/kuari-pass.jpeg";
 
-import kagbhusandiImage from "../assets/images/valley/valley2.jpeg";
+// import kagbhusandiImage from "../assets/images/valley/valley2.jpeg";
 
 import valleyImage from "../assets/images/valley/heroImage.jpeg";
 
@@ -12,7 +12,20 @@ import gallery3 from "../assets/images/valley/flower3.jpeg";
 import gallery4 from "../assets/images/valley/flower4.jpeg";
 import gallery5 from "../assets/images/valley/flower5.jpeg";
 import gallery6 from "../assets/images/valley/flower6.jpeg";
-import gallery7 from "../assets/images/valley/valley.jpeg";
+// import gallery7 from "../assets/images/valley/valley.jpeg";
+
+import kag1 from "../assets/images/kagbhusandi/kag1.jpeg";
+import kag2 from "../assets/images/kagbhusandi/kag2.jpeg";
+import kag3 from "../assets/images/kagbhusandi/kag3.jpeg";
+import kag4 from "../assets/images/kagbhusandi/kag4.jpeg";
+import kag5 from "../assets/images/kagbhusandi/kag5.jpeg";
+import kag6 from "../assets/images/kagbhusandi/kag6.jpeg";
+import kag7 from "../assets/images/kagbhusandi/kag7.jpeg";
+import kag8 from "../assets/images/kagbhusandi/kag8.jpeg";
+import kag9 from "../assets/images/kagbhusandi/kag9.jpeg";
+import kaga1 from "../assets/images/kagbhusandi/kaga1.jpeg";
+import kaga2 from "../assets/images/kagbhusandi/kaga2.jpeg";
+import kaga3 from "../assets/images/kagbhusandi/kaga3.jpeg";
 
 export const destinations = [
   {
@@ -21,7 +34,7 @@ export const destinations = [
     country: "India",
     description:
       "A hidden gem in the Garhwal Himalayas, Kagbhusandi Tal is a sacred high-altitude lake trek ideal for seasoned trekkers seeking solitude, alpine beauty, and cultural connection. This 60 km journey winds through wild valleys, local villages, and pristine Himalayan backdrops.",
-    imageUrl: kagbhusandiImage, // Replace with actual image import
+    imageUrl: kag8, // Replace with actual image import
     bestTimeToVisit: "June - October",
     attractions: [
       "Kagbhusandi Tal",
@@ -30,7 +43,20 @@ export const destinations = [
       "Semer Toli Kharak",
       "Rare Himalayan Wildlife",
     ],
-    galleryImages: [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6], // Update accordingly
+    galleryImages: [
+      kag1,
+      kag2,
+      kag3,
+      kag4,
+      kag5,
+      kag6,
+      kag7,
+      kag8,
+      kag9,
+      kaga1,
+      kaga2,
+      kaga3,
+    ], // Update accordingly
     itinerary: [
       {
         day: "Day 1",
@@ -106,7 +132,20 @@ export const destinations = [
     duration: "6-7 days",
     altitude: "5,200 meters",
     difficulty: "Challenging",
-    gallery: [gallery1, gallery2, gallery3, gallery5, gallery7], // Optional simplified gallery
+    gallery: [
+      kag1,
+      kag2,
+      kag3,
+      kag4,
+      kag5,
+      kag6,
+      kag7,
+      kag8,
+      kag9,
+      kaga1,
+      kaga2,
+      kaga3,
+    ], // Optional simplified gallery
   },
   {
     id: "valley-of-flowers",
@@ -272,7 +311,7 @@ export const topDestinations = [
   {
     id: "kagbhusandi-tal",
     name: "Kagbhusandi Trek",
-    image: kagbhusandiImage,
+    image: kag8,
     description:
       "A hidden gem in the Garhwal Himalayas, Kagbhusandi Tal is a sacred high-altitude lake trek ideal for seasoned trekkers seeking solitude.",
     price: "25,000",
